@@ -1,0 +1,29 @@
+
+<div class="row bg-light">
+    <div class="col-sm-6">
+        <form>
+    <fieldset class='form-group'>
+    <legend>Add a Movie</legend>
+    <div class= 'form-group'>
+        <label form="title">Movie
+            title 
+        </label>
+        <input name="title" class="form-control" placeholder="Entre movie title" #movietitle>
+    
+    </div>
+    <div class='form-group'>
+        <label form="director">Director</label>
+        <input name="director" class="form-control" placeholder="Enter director name" #moviedirector>
+    </div>
+    <div class="form-group">
+    <label for="year">Year</label>
+    <input name="Year" class="form-control" placeholder="Enter Year" #movieyear>
+    </div>
+    <button (click) ="addNewMovie(movietitle, moviedirector, movieyear)" class="btn btn-primary">Add Movie</button>
+    </fieldset>
+        </form>
+    </div>
+    
+    
+    
+    </div>

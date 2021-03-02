@@ -1,0 +1,18 @@
+<div class="container">
+<h2>My Favourites</h2>
+</div>
+<div *ngFor="let movie of movies " class='container bg-secondary text-white pt-3 pb-3 mb-1' (click)='selectMovie(movie)'
+[class.bg-info]="isSelected(movie)">
+    <div class="row align-items">
+    <div class="col-sm-6">
+        {{movie.title}}
+    </div>
+    <div class="col-sm-4">
+        {{movie.director}}
+    </div>
+    <div class="col-sm-2">
+        {{movie.year}}
+    </div>
+</div>
+
+</div>
